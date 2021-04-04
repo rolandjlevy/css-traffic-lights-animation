@@ -1,6 +1,21 @@
+:root {
+  --red: #dd1e10;
+  --amber: #f7b500;
+  --green: #33a532;
+}
+
 body {
   margin: 50px;
   background: #222;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 ul, li {
@@ -15,56 +30,77 @@ ul.lights {
   justify-content: center;
   flex-direction: column;
   background: black;
-  margin: 20px auto;
-  padding: 30px;
+  margin: 20px auto 0 auto;
+  padding: 40px 30px;
   width: fit-content;
-  border-radius: 30px;
-  box-shadow: 0 0 50px 10px rgba(255, 255, 255, 0.1);
+  border-radius: 45px;
+  border: 20px solid #1e1e29;
+  box-shadow: 0 0 75px 20px rgba(255, 255, 255, 0.2);
 }
 
 ul.lights > li {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  margin-bottom: 30px;
   animation-name: fade;
   animation-duration: 6s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  opacity: 0.2;
-  /*filter: blur(10px);*/
+  opacity: 0.3;
 }
 
+ul.lights > li:not(:last-child) {
+  margin-bottom: 30px;
+}
 
 ul.lights > li.red {
-  background-color: #dd1e10;
-  box-shadow: 0 0 35px 15px #dd1e10;
+  background-color: var(--red);
+  box-shadow: 0 0 35px 15px var(--red);
   animation-delay: 0s;
 }
 
 ul.lights > li.amber {
-  background-color: #f7b500;
-  box-shadow: 0 0 35px 15px #f7b500;
+  background-color: var(--amber);
+  box-shadow: 0 0 35px 15px var(--amber);
   animation-delay: 2s;
 }
 
 ul.lights > li.green {
-  background-color: #33a532;
-  box-shadow: 0 0 35px 15px #33a532;
+  background-color: var(--green);
+  box-shadow: 0 0 35px 15px var(--green);
   animation-delay: 4s;
 }
 
 @keyframes fade {
-  0% {
-    opacity: 0.2;
+  0%, 66%, 100% {
+    opacity: 0.3;
   }
   33% {
     opacity: 1;
   }
-  66% {
-    opacity: 0.2;
-  }
-  100% {
-    opacity: 0.2;
-  }
+}
+
+.night-sky {
+  background: linear-gradient(180deg,
+    #000,
+    #00041a,
+    #000625,
+    #000625,
+    #000c4b,
+    #1a0057,
+    #680088,
+    #ffd448
+  );
+}
+
+.pole {
+  width: 50px;
+  height: 50vh;
+  background: linear-gradient(to right, 
+    #1e1e29, 
+    #343441, 
+    #1e1e29, 
+    #1e1e2b, 
+    #0a0a11
+  );
 }
