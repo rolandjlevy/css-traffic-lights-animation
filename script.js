@@ -1,1 +1,1 @@
-// no JS here - all done with CSS
+// no JS - this is all done with CSS
