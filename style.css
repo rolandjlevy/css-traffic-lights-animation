@@ -5,7 +5,7 @@
   --amber-dark: #f7b50033;
   --green: #33a532;
   --green-dark: #33a53233;
-  --speed: 1.5s;
+  --speed: 1s;
 }
 
 body {
@@ -37,8 +37,8 @@ ul.lights {
   padding: 40px 30px;
   width: fit-content;
   border-radius: 45px;
-  border: 20px solid #1e1e29;
-  box-shadow: 0 0 75px 20px rgba(255, 255, 255, 0.2);
+  border: 20px solid #13131a;
+  box-shadow: 0 0 75px 20px rgba(201, 228, 255, 0.3);
 }
 
 ul.lights > li {
@@ -110,5 +110,5 @@ ul.lights > li.green {
     #1e1e2b, 
     #0a0a11
   );
-  box-shadow: 0 0 75px 20px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 75px 20px rgba(201, 228, 255, 0.2);
 }
