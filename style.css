@@ -45,7 +45,7 @@ ul.lights > li {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  border: 10px solid rgba(255, 255, 255, 0.1);
+  border: 10px solid rgba(255, 255, 255, 0);
   animation-name: fade;
   animation-duration: calc(var(--speed) * 3);
   animation-iteration-count: infinite;
@@ -78,9 +78,11 @@ ul.lights > li.green {
 @keyframes fade {
   0%, 50%, 66.6%, 83.3%, 100% {
     opacity: 0.3;
+    border: 10px solid rgba(255, 255, 255, 0);
   }
   16.6%, 33% {
     opacity: 1;
+    border: 10px solid rgba(255, 255, 255, 0.1);
   }
 }
 
