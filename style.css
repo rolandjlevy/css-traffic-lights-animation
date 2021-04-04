@@ -32,22 +32,25 @@ ul.lights > li {
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   opacity: 0.2;
-  filter: blur(10px);
+  /*filter: blur(10px);*/
 }
 
 
 ul.lights > li.red {
-  background-color: red;
+  background-color: #dd1e10;
+  box-shadow: 0 0 35px 15px #dd1e10;
   animation-delay: 0s;
 }
 
 ul.lights > li.amber {
-  background-color: #ffee00;
+  background-color: #f7b500;
+  box-shadow: 0 0 35px 15px #f7b500;
   animation-delay: 2s;
 }
 
 ul.lights > li.green {
-  background-color: green;
+  background-color: #33a532;
+  box-shadow: 0 0 35px 15px #33a532;
   animation-delay: 4s;
 }
 
