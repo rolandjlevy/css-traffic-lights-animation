@@ -1,12 +1,15 @@
 :root {
   --red: #dd1e10;
+  --red-dark: #dd1e1033;
   --amber: #f7b500;
+  --amber-dark: #f7b50033;
   --green: #33a532;
+  --green-dark: #33a53233;
+  --speed: 1.5s;
 }
 
 body {
   margin: 50px;
-  background: #222;
   height: 100vh;
   overflow: hidden;
 }
@@ -39,11 +42,12 @@ ul.lights {
 }
 
 ul.lights > li {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
+  border: 10px solid rgba(255, 255, 255, 0.1);
   animation-name: fade;
-  animation-duration: 6s;
+  animation-duration: calc(var(--speed) * 3);
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   opacity: 0.3;
@@ -55,46 +59,47 @@ ul.lights > li:not(:last-child) {
 
 ul.lights > li.red {
   background-color: var(--red);
-  box-shadow: 0 0 35px 15px var(--red);
+  box-shadow: 0 0 30px 15px var(--red), 0 0 60px 30px var(--red-dark);
   animation-delay: 0s;
 }
 
 ul.lights > li.amber {
   background-color: var(--amber);
-  box-shadow: 0 0 35px 15px var(--amber);
-  animation-delay: 2s;
+  box-shadow: 0 0 30px 15px var(--amber), 0 0 60px 30px var(--amber-dark);
+  animation-delay: calc(var(--speed) * 1);
 }
 
 ul.lights > li.green {
   background-color: var(--green);
-  box-shadow: 0 0 35px 15px var(--green);
-  animation-delay: 4s;
+  box-shadow: 0 0 30px 15px var(--green), 0 0 60px 30px var(--green-dark);
+  animation-delay: calc(var(--speed) * 2);
 }
 
 @keyframes fade {
-  0%, 66%, 100% {
+  0%, 50%, 66.6%, 83.3%, 100% {
     opacity: 0.3;
   }
-  33% {
+  16.6%, 33% {
     opacity: 1;
   }
 }
 
 .night-sky {
   background: linear-gradient(180deg,
-    #000,
+    #000108,
+    #00020f,
     #00041a,
     #000625,
     #000625,
     #000c4b,
     #1a0057,
-    #680088,
-    #ffd448
+    #88005f,
+    #ff784f
   );
 }
 
 .pole {
-  width: 50px;
+  width: 40px;
   height: 50vh;
   background: linear-gradient(to right, 
     #1e1e29, 
@@ -103,4 +108,5 @@ ul.lights > li.green {
     #1e1e2b, 
     #0a0a11
   );
+  box-shadow: 0 0 75px 20px rgba(255, 255, 255, 0.2);
 }
