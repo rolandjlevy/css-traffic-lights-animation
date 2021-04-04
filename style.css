@@ -59,7 +59,7 @@ ul.lights > li:not(:last-child) {
 
 ul.lights > li.red {
   background-color: var(--red);
-  box-shadow: 0 0 30px 15px var(--red), 0 0 60px 30px var(--red-dark);
+  box-shadow: 0 0 30px 15px var(--red), 0 0 60px 30px ;
   animation-delay: 0s;
 }
 
