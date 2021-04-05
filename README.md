@@ -12,10 +12,10 @@ Using the power of the CSS animation property to animate a set of traffic lights
 
 ### How it works ⚙️
 - Each light fades in and out using the CSS `animation` property
-- The opacity of each light is controlled by the `@keyframes` 
+- The opacity of each light is controlled by the `@keyframes` rule
 - The `animation-delay` property straggers the timing of the change
-- The `box-shadow` property creates the glow of the lights
+- The `box-shadow` property creates the glow effect for the lights
 - The animation can be played / paused using the switch button
 
 ### About CSS animations ℹ️
-A CSS animation lets an element gradually change from one style to another. You can change as many CSS properties you want, as many times you want. [Find out more](https://www.w3schools.com/css/css3_animations.asp)rol
+A CSS animation lets an element gradually change from one style to another. You can change as many CSS properties you want, as many times you want. [Find out more](https://www.w3schools.com/css/css3_animations.asp)
