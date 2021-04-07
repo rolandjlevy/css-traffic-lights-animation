@@ -114,3 +114,32 @@ ul.lights > li.green {
   );
   box-shadow: 0 0 100px 20px hsla(207, 100%, 89%, 0.3);
 }
+
+header.about {
+  position: absolute;
+  display: inline-block;
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-family: 'Courier New', Courier, monospace;
+  top: 20px;
+  right: 20px;
+}
+
+header.about > a {
+  color: var(--mid-blue);
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+header.about > a:hover {
+  color: var(--mid-light-blue);
+}
+
+.new-tab-icon::after {
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 600;
+  font-size: 1rem;
+  content: "\f35d";
+  margin-left: 10px;
+}
