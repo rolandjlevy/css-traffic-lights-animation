@@ -1,6 +1,7 @@
 :root {
   --mid-blue: hsl(230, 37%, 44%);
   --mid-light-blue: hsl(230, 37%, 60%);
+  --mid-lighter-blue: hsl(230, 37%, 70%);
 }
 
 .toggler {
