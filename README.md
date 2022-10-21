@@ -1,6 +1,6 @@
 # CSS traffic lights 🚦
 
-Using the power of the CSS animation property to animate a set of traffic lights at night. Look, no JavaScript! 👀
+Using the CSS animation property to animate a set of traffic lights at night. Look, no JavaScript! 👀
 
 ### Links 🔗
 
