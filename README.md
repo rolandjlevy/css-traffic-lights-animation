@@ -5,8 +5,7 @@ Using the CSS animation property to animate a set of traffic lights at night. Lo
 ### Links 🔗
 
 + [Play live demo](https://css-traffic-lights-animation.rolandjlevy.repl.co/)
-+ [See source code](https://replit.com/@RolandJLevy/css-traffic-lights-animation)
-+ [Explore Github repo](https://github.com/rolandjlevy/css-traffic-lights-animation)
++ [See source code](https://github.com/rolandjlevy/css-traffic-lights-animation)
 
 ![Traffic lights](https://raw.githubusercontent.com/rolandjlevy/css-traffic-lights-animation/master/images/traffic-lights.png)
 
